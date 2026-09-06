@@ -296,7 +296,7 @@ function Home() {
               <Reveal key={place.name} variant="image" delay={i * 110}>
                 <article className="group relative overflow-hidden rounded-sm">
                   <img
-                    src={destinationImages[i].url}
+                    src={destinationImages[i] ?? forest}
                     alt={`Countryside near ${place.name}`}
                     width={1024}
                     height={1280}
