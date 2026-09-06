@@ -89,6 +89,7 @@ export const Route = createFileRoute("/")({
 const featureIcons = [Users, BedDouble, Trees, Mountain, Wifi, UtensilsCrossed];
 
 const destinationImages = [forest, town, dales, pub];
+const dogImages = [winnie.url, woody.url, rory.url];
 
 function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -384,21 +385,21 @@ function Home() {
           </Reveal>
 
           <div className="mt-14 grid gap-10 sm:grid-cols-3">
-            {[winnie, woody, rory].map((image, i) => (
-              <Reveal key={dogs[i].name} delay={i * 180}>
+            {dogs.map((dog, i) => (
+              <Reveal key={dog.name} delay={i * 180}>
                 <figure>
                   <img
-                    src={image.url}
-                    alt={`${dogs[i].name}, one of the Valley Views Escape dogs`}
+                    src={dogImages[i]}
+                    alt={`${dog.name}, one of the Valley Views Escape dogs`}
                     width={600}
                     height={967}
                     loading="lazy"
                     className="aspect-[3/4] w-full rounded-sm object-cover"
                   />
                   <figcaption className="mt-6">
-                    <h3 className="font-serif text-3xl">{dogs[i].name}</h3>
+                    <h3 className="font-serif text-3xl">{dog.name}</h3>
                     <p className="text-muted-foreground mt-2 leading-relaxed">
-                      {dogs[i].description}
+                      {dog.description}
                     </p>
                   </figcaption>
                 </figure>
