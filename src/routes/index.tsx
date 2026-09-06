@@ -31,12 +31,12 @@ import {
   siteSettings,
 } from "@/components/site/content";
 import hero from "@/assets/decking-dogs.jpg.asset.json";
-import landscape from "@/assets/valley-landscape.jpg.asset.json";
-import coffee from "@/assets/morning-coffee.jpg.asset.json";
-import forest from "@/assets/gisburn-forest.jpg.asset.json";
-import town from "@/assets/market-town.jpg.asset.json";
-import dales from "@/assets/yorkshire-dales.jpg.asset.json";
-import pub from "@/assets/country-pub.jpg.asset.json";
+import landscape from "@/assets/valley-landscape.jpg";
+import coffee from "@/assets/morning-coffee.jpg";
+import forest from "@/assets/gisburn-forest.jpg";
+import town from "@/assets/market-town.jpg";
+import dales from "@/assets/yorkshire-dales.jpg";
+import pub from "@/assets/country-pub.jpg";
 import winnie from "@/assets/winnie.jpg.asset.json";
 import woody from "@/assets/woody.jpg.asset.json";
 import rory from "@/assets/rory.jpg.asset.json";
@@ -89,6 +89,7 @@ export const Route = createFileRoute("/")({
 const featureIcons = [Users, BedDouble, Trees, Mountain, Wifi, UtensilsCrossed];
 
 const destinationImages = [forest, town, dales, pub];
+const dogImages = [winnie.url, woody.url, rory.url];
 
 function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -186,7 +187,7 @@ function Home() {
             </Reveal>
             <Reveal variant="image" delay={150}>
               <img
-                src={coffee.url}
+                src={coffee}
                 alt="A mug of coffee on the decking rail looking out over open countryside"
                 width={1280}
                 height={960}
@@ -249,7 +250,7 @@ function Home() {
         <section className="relative overflow-hidden">
           <div ref={viewsParallax.ref} className="absolute inset-0 -top-12 -bottom-12">
             <img
-              src={landscape.url}
+              src={landscape}
               alt="Mist over the rolling fields and drystone walls around Todber Valley at sunrise"
               width={1920}
               height={1088}
@@ -295,7 +296,7 @@ function Home() {
               <Reveal key={place.name} variant="image" delay={i * 110}>
                 <article className="group relative overflow-hidden rounded-sm">
                   <img
-                    src={destinationImages[i].url}
+                    src={destinationImages[i] ?? forest}
                     alt={`Countryside near ${place.name}`}
                     width={1024}
                     height={1280}
@@ -338,7 +339,7 @@ function Home() {
           <div className="mx-auto grid max-w-[86rem] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20 lg:py-32">
             <Reveal variant="image">
               <img
-                src={dales.url}
+                src={dales}
                 alt="Drystone walls and a stone barn in the countryside near Todber Valley"
                 width={1024}
                 height={1280}
@@ -384,21 +385,21 @@ function Home() {
           </Reveal>
 
           <div className="mt-14 grid gap-10 sm:grid-cols-3">
-            {[winnie, woody, rory].map((image, i) => (
-              <Reveal key={dogs[i].name} delay={i * 180}>
+            {dogs.map((dog, i) => (
+              <Reveal key={dog.name} delay={i * 180}>
                 <figure>
                   <img
-                    src={image.url}
-                    alt={`${dogs[i].name}, one of the Valley Views Escape dogs`}
+                    src={dogImages[i]}
+                    alt={`${dog.name}, one of the Valley Views Escape dogs`}
                     width={600}
                     height={967}
                     loading="lazy"
                     className="aspect-[3/4] w-full rounded-sm object-cover"
                   />
                   <figcaption className="mt-6">
-                    <h3 className="font-serif text-3xl">{dogs[i].name}</h3>
+                    <h3 className="font-serif text-3xl">{dog.name}</h3>
                     <p className="text-muted-foreground mt-2 leading-relaxed">
-                      {dogs[i].description}
+                      {dog.description}
                     </p>
                   </figcaption>
                 </figure>
@@ -434,7 +435,7 @@ function Home() {
             </Reveal>
             <Reveal variant="image" delay={140}>
               <img
-                src={forest.url}
+                src={forest}
                 alt="A quiet woodland path near Gisburn Forest"
                 width={1024}
                 height={1280}
