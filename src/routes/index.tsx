@@ -186,7 +186,7 @@ function Home() {
             </Reveal>
             <Reveal variant="image" delay={150}>
               <img
-                src={coffee.url}
+                src={coffee}
                 alt="A mug of coffee on the decking rail looking out over open countryside"
                 width={1280}
                 height={960}
@@ -249,7 +249,7 @@ function Home() {
         <section className="relative overflow-hidden">
           <div ref={viewsParallax.ref} className="absolute inset-0 -top-12 -bottom-12">
             <img
-              src={landscape.url}
+              src={landscape}
               alt="Mist over the rolling fields and drystone walls around Todber Valley at sunrise"
               width={1920}
               height={1088}
@@ -338,7 +338,7 @@ function Home() {
           <div className="mx-auto grid max-w-[86rem] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-20 lg:py-32">
             <Reveal variant="image">
               <img
-                src={dales.url}
+                src={dales}
                 alt="Drystone walls and a stone barn in the countryside near Todber Valley"
                 width={1024}
                 height={1280}
@@ -434,7 +434,7 @@ function Home() {
             </Reveal>
             <Reveal variant="image" delay={140}>
               <img
-                src={forest.url}
+                src={forest}
                 alt="A quiet woodland path near Gisburn Forest"
                 width={1024}
                 height={1280}
