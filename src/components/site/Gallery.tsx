@@ -2,13 +2,13 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Reveal } from "./Reveal";
 import decking from "@/assets/decking-dogs.jpg.asset.json";
-import landscape from "@/assets/valley-landscape.jpg.asset.json";
-import coffee from "@/assets/morning-coffee.jpg.asset.json";
+import landscape from "@/assets/valley-landscape.jpg";
+import coffee from "@/assets/morning-coffee.jpg";
 
 const images = [
   { src: decking.url, alt: "Winnie, Woody and Rory sitting on the private decking at Valley Views Escape" },
-  { src: landscape.url, alt: "Rolling Ribble Valley countryside in soft morning light" },
-  { src: coffee.url, alt: "A mug of coffee resting on the decking rail with countryside beyond" },
+  { src: landscape, alt: "Rolling Ribble Valley countryside in soft morning light" },
+  { src: coffee, alt: "A mug of coffee resting on the decking rail with countryside beyond" },
 ];
 
 export function Gallery() {

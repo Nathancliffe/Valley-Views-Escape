@@ -31,12 +31,12 @@ import {
   siteSettings,
 } from "@/components/site/content";
 import hero from "@/assets/decking-dogs.jpg.asset.json";
-import landscape from "@/assets/valley-landscape.jpg.asset.json";
-import coffee from "@/assets/morning-coffee.jpg.asset.json";
-import forest from "@/assets/gisburn-forest.jpg.asset.json";
-import town from "@/assets/market-town.jpg.asset.json";
-import dales from "@/assets/yorkshire-dales.jpg.asset.json";
-import pub from "@/assets/country-pub.jpg.asset.json";
+import landscape from "@/assets/valley-landscape.jpg";
+import coffee from "@/assets/morning-coffee.jpg";
+import forest from "@/assets/gisburn-forest.jpg";
+import town from "@/assets/market-town.jpg";
+import dales from "@/assets/yorkshire-dales.jpg";
+import pub from "@/assets/country-pub.jpg";
 import winnie from "@/assets/winnie.jpg.asset.json";
 import woody from "@/assets/woody.jpg.asset.json";
 import rory from "@/assets/rory.jpg.asset.json";
