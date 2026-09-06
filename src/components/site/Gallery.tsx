@@ -50,8 +50,8 @@ export function Gallery() {
           <DialogTitle className="sr-only">Photo</DialogTitle>
           {active !== null && (
             <img
-              src={images[active].src}
-              alt={images[active].alt}
+              src={images[active]?.src}
+              alt={images[active]?.alt}
               className="h-auto w-full rounded-sm object-contain"
             />
           )}
