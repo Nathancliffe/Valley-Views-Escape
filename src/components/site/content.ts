@@ -9,32 +9,38 @@ export const siteSettings = {
   strapline: "Beautiful places. Lasting memories.",
   location: "Todber Valley • Gisburn • Ribble Valley",
   /* PLACEHOLDER — replace with the real booking/availability link */
-  bookingUrl: "#contact",
-  /* PLACEHOLDER — replace with the real enquiry email address */
-  email: "[email address to be supplied]",
-  /* PLACEHOLDER — replace with the real contact number */
-  phone: "[phone number to be supplied]",
-  /* Add social links here once supplied — none are shown while empty */
-  socials: [] as { label: string; href: string }[],
+  bookingUrl: "/contact",
+  email: "hello@valleyviewsescape.com",
+  phone: "07808 084222",
+  socials: [
+    {
+      label: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=61593610795026",
+    },
+  ] as { label: string; href: string }[],
 };
 
 export const navigation = [
-  { label: "Home", href: "#top" },
-  { label: "The Escape", href: "#the-escape" },
-  { label: "Explore", href: "#explore" },
-  { label: "The Dogs", href: "#the-dogs" },
-  { label: "FAQs", href: "#faqs" },
-  { label: "Contact", href: "#contact" },
-];
+  { label: "Home", href: "/" },
+  { label: "The Escape", href: "/the-escape" },
+  { label: "Explore", href: "/explore" },
+  { label: "The Dogs", href: "/the-dogs" },
+  { label: "FAQs", href: "/faqs" },
+  { label: "Contact", href: "/contact" },
+] as const;
 
 export const headlineFeatures = [
   { title: "Sleeps up to 6", note: "Room for the whole family" },
   { title: "2 bedrooms", note: "Plus a sofa bed in the living area" },
   { title: "Private decking", note: "Your own spot to sit out" },
   { title: "Countryside views", note: "Open fields all around" },
+  { title: "Dog friendly", note: "Four-legged family welcome too" },
+  { title: "Central heating", note: "Warm and cosy whatever the season" },
+  { title: "Double glazed windows", note: "Snug, quiet and well insulated" },
   { title: "Free WiFi", note: "Stay connected if you need to" },
   { title: "Fully equipped kitchen", note: "Everything you need to cook in" },
 ];
+
 
 export const practicalFeatures = [
   "Sofa bed",
