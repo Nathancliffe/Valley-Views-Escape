@@ -2,13 +2,32 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Reveal } from "./Reveal";
 import decking from "@/assets/decking-dogs.jpg.asset.json";
-import landscape from "@/assets/valley-landscape.jpg";
-import coffee from "@/assets/morning-coffee.jpg";
+import v1 from "@/assets/valley-views-1.jpg.asset.json";
+import v2 from "@/assets/valley-views-2.jpg.asset.json";
+import v3 from "@/assets/valley-views-3.jpg.asset.json";
+import v4 from "@/assets/valley-views-4.jpg.asset.json";
+import v5 from "@/assets/valley-views-5.jpg.asset.json";
+import v6 from "@/assets/valley-views-6.jpg.asset.json";
+import v7 from "@/assets/valley-views-7.jpg.asset.json";
+import v8 from "@/assets/valley-views-8.jpg.asset.json";
+import v9 from "@/assets/valley-views-9.jpg.asset.json";
+import v10 from "@/assets/valley-views-10.jpg.asset.json";
 
 const images = [
-  { src: decking.url, alt: "Winnie, Woody and Rory sitting on the private decking at Valley Views Escape" },
-  { src: landscape, alt: "Rolling Ribble Valley countryside in soft morning light" },
-  { src: coffee, alt: "A mug of coffee resting on the decking rail with countryside beyond" },
+  {
+    src: decking.url,
+    alt: "Winnie, Woody and Rory sitting on the private decking at Valley Views Escape",
+  },
+  { src: v5.url, alt: "Corner sofa in the living area with countryside views through the windows" },
+  { src: v8.url, alt: "View from the living area out over the decking and open fields" },
+  { src: v4.url, alt: "Living and dining area with fireplace and mustard velvet dining chairs" },
+  { src: v1.url, alt: "Glass dining table with four mustard velvet chairs beside the window" },
+  { src: v2.url, alt: "Sage green kitchen with oven, hob, sink and fridge freezer" },
+  { src: v6.url, alt: "Kitchen worktop with kettle, toaster and air fryer" },
+  { src: v10.url, alt: "Main bedroom with double bed and bedside lamps" },
+  { src: v7.url, alt: "Second bedroom with two single beds and countryside outlook" },
+  { src: v3.url, alt: "Bathroom with walk-in shower, basin and toilet" },
+  { src: v9.url, alt: "Private decking running alongside the caravan with fields beyond" },
 ];
 
 export function Gallery() {
@@ -16,13 +35,13 @@ export function Gallery() {
 
   return (
     <>
-      <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
+      <div className="-mx-5 flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0">
         {images.map((image, i) => (
           <Reveal
             key={image.src}
             variant="image"
-            delay={i * 120}
-            className={i === 0 ? "sm:col-span-2 sm:row-span-2" : ""}
+            delay={(i % 3) * 120}
+            className={`w-[78vw] shrink-0 snap-center sm:w-auto ${i === 0 ? "sm:col-span-2 sm:row-span-2" : ""}`}
           >
             <button
               type="button"
@@ -40,10 +59,6 @@ export function Gallery() {
           </Reveal>
         ))}
       </div>
-
-      <p className="text-muted-foreground mt-5 text-xs tracking-[0.14em] uppercase">
-        [Placeholder gallery — interior photography of the caravan to be supplied]
-      </p>
 
       <Dialog open={active !== null} onOpenChange={(open) => !open && setActive(null)}>
         <DialogContent className="max-w-4xl border-none bg-transparent p-0 shadow-none">
