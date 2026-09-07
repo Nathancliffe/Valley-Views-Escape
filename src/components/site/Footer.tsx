@@ -1,7 +1,11 @@
+import { Link } from "@tanstack/react-router";
+import { Facebook } from "lucide-react";
 import logo from "@/assets/valley-views-logo.png.asset.json";
 import { navigation, siteSettings } from "./content";
 
 export function Footer() {
+  const facebook = siteSettings.socials[0];
+
   return (
     <footer className="border-border bg-secondary/50 border-t">
       <div className="mx-auto grid max-w-[86rem] gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.2fr_1fr_1fr] lg:py-20">
@@ -21,6 +25,17 @@ export function Footer() {
           <p className="text-muted-foreground mt-4 font-serif text-lg italic">
             {siteSettings.strapline}
           </p>
+          {facebook && (
+            <a
+              href={facebook.href}
+              target="_blank"
+              rel="noreferrer"
+              className="border-border hover:border-sage hover:text-primary mt-6 inline-flex items-center gap-2 rounded-sm border px-4 py-2 text-xs tracking-[0.18em] uppercase transition-colors"
+            >
+              <Facebook className="h-4 w-4" aria-hidden="true" strokeWidth={1.4} />
+              Follow us on Facebook
+            </a>
+          )}
         </div>
 
         <nav aria-label="Footer">
@@ -28,15 +43,15 @@ export function Footer() {
           <ul className="mt-5 space-y-3 text-sm">
             {navigation.map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="link-underline hover:text-primary">
+                <Link to={item.href} className="link-underline hover:text-primary">
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li>
-              <a href={siteSettings.bookingUrl} className="link-underline text-primary">
+              <Link to="/contact" className="link-underline text-primary">
                 Check availability
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -44,8 +59,21 @@ export function Footer() {
         <div>
           <h2 className="eyebrow">Get in touch</h2>
           <ul className="text-muted-foreground mt-5 space-y-3 text-sm">
-            <li>Email: {siteSettings.email}</li>
-            <li>Phone: {siteSettings.phone}</li>
+            <li>
+              Email:{" "}
+              <a href={`mailto:${siteSettings.email}`} className="link-underline hover:text-primary">
+                {siteSettings.email}
+              </a>
+            </li>
+            <li>
+              Phone:{" "}
+              <a
+                href={`tel:${siteSettings.phone.replace(/\s/g, "")}`}
+                className="link-underline hover:text-primary"
+              >
+                {siteSettings.phone}
+              </a>
+            </li>
             <li>Todber Valley Holiday Park, Gisburn, Ribble Valley</li>
           </ul>
         </div>
