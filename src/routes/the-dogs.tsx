@@ -48,7 +48,7 @@ function TheDogs() {
                   src={dogImages[i]}
                   alt={`${dog.name}, one of the Valley Views Escape dogs`}
                   loading="lazy"
-                  className="aspect-[4/5] w-full rounded-sm object-cover"
+                  className="aspect-[4/5] w-full rounded-sm object-cover object-[50%_30%]"
                 />
                 <figcaption className="mt-5">
                   <h2 className="font-serif text-3xl">{dog.name}</h2>
