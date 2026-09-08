@@ -10,33 +10,91 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ExploreRouteImport } from './routes/explore'
+import { Route as FaqsRouteImport } from './routes/faqs'
+import { Route as TheDogsRouteImport } from './routes/the-dogs'
+import { Route as TheEscapeRouteImport } from './routes/the-escape'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExploreRoute = ExploreRouteImport.update({
+  id: '/explore',
+  path: '/explore',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqsRoute = FaqsRouteImport.update({
+  id: '/faqs',
+  path: '/faqs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TheDogsRoute = TheDogsRouteImport.update({
+  id: '/the-dogs',
+  path: '/the-dogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TheEscapeRoute = TheEscapeRouteImport.update({
+  id: '/the-escape',
+  path: '/the-escape',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/explore': typeof ExploreRoute
+  '/faqs': typeof FaqsRoute
+  '/the-dogs': typeof TheDogsRoute
+  '/the-escape': typeof TheEscapeRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/explore': typeof ExploreRoute
+  '/faqs': typeof FaqsRoute
+  '/the-dogs': typeof TheDogsRoute
+  '/the-escape': typeof TheEscapeRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/explore': typeof ExploreRoute
+  '/faqs': typeof FaqsRoute
+  '/the-dogs': typeof TheDogsRoute
+  '/the-escape': typeof TheEscapeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/contact' | '/explore' | '/faqs' | '/the-dogs' | '/the-escape'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/contact' | '/explore' | '/faqs' | '/the-dogs' | '/the-escape'
+  id:
+    | '__root__'
+    | '/'
+    | '/contact'
+    | '/explore'
+    | '/faqs'
+    | '/the-dogs'
+    | '/the-escape'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactRoute: typeof ContactRoute
+  ExploreRoute: typeof ExploreRoute
+  FaqsRoute: typeof FaqsRoute
+  TheDogsRoute: typeof TheDogsRoute
+  TheEscapeRoute: typeof TheEscapeRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +106,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/explore': {
+      id: '/explore'
+      path: '/explore'
+      fullPath: '/explore'
+      preLoaderRoute: typeof ExploreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faqs': {
+      id: '/faqs'
+      path: '/faqs'
+      fullPath: '/faqs'
+      preLoaderRoute: typeof FaqsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/the-dogs': {
+      id: '/the-dogs'
+      path: '/the-dogs'
+      fullPath: '/the-dogs'
+      preLoaderRoute: typeof TheDogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/the-escape': {
+      id: '/the-escape'
+      path: '/the-escape'
+      fullPath: '/the-escape'
+      preLoaderRoute: typeof TheEscapeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactRoute: ContactRoute,
+  ExploreRoute: ExploreRoute,
+  FaqsRoute: FaqsRoute,
+  TheDogsRoute: TheDogsRoute,
+  TheEscapeRoute: TheEscapeRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
