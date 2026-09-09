@@ -135,6 +135,31 @@ function Explore() {
         </div>
       </section>
 
+      {/* ---------------- GUIDES CALLOUT ---------------- */}
+      <section className="bg-secondary/45 border-border border-y">
+        <div className="mx-auto max-w-[86rem] px-5 py-16 sm:px-8 lg:py-20">
+          <Reveal className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
+            <div className="max-w-xl">
+              <p className="eyebrow">Free downloads</p>
+              <h2 className="mt-4 font-serif text-3xl leading-tight sm:text-4xl">
+                Take our local guides with you
+              </h2>
+              <p className="text-muted-foreground mt-4 leading-relaxed">
+                Download our walking guide and places-to-visit guide — walks within 5 miles
+                of Todber Valley and our favourite days out near Gisburn.
+              </p>
+            </div>
+            <Link
+              to="/guides"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex shrink-0 items-center gap-2 rounded-sm px-6 py-3 text-[0.78rem] tracking-[0.2em] uppercase transition-colors"
+            >
+              View the guides
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ---------------- EXPERIENCES ---------------- */}
       <section className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-32">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-20">

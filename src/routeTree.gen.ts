@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as FaqsRouteImport } from './routes/faqs'
+import { Route as GuidesRouteImport } from './routes/guides'
 import { Route as TheDogsRouteImport } from './routes/the-dogs'
 import { Route as TheEscapeRouteImport } from './routes/the-escape'
 
@@ -36,6 +37,11 @@ const FaqsRoute = FaqsRouteImport.update({
   path: '/faqs',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GuidesRoute = GuidesRouteImport.update({
+  id: '/guides',
+  path: '/guides',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TheDogsRoute = TheDogsRouteImport.update({
   id: '/the-dogs',
   path: '/the-dogs',
@@ -52,6 +58,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/explore': typeof ExploreRoute
   '/faqs': typeof FaqsRoute
+  '/guides': typeof GuidesRoute
   '/the-dogs': typeof TheDogsRoute
   '/the-escape': typeof TheEscapeRoute
 }
@@ -60,6 +67,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/explore': typeof ExploreRoute
   '/faqs': typeof FaqsRoute
+  '/guides': typeof GuidesRoute
   '/the-dogs': typeof TheDogsRoute
   '/the-escape': typeof TheEscapeRoute
 }
@@ -69,21 +77,36 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/explore': typeof ExploreRoute
   '/faqs': typeof FaqsRoute
+  '/guides': typeof GuidesRoute
   '/the-dogs': typeof TheDogsRoute
   '/the-escape': typeof TheEscapeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/contact' | '/explore' | '/faqs' | '/the-dogs' | '/the-escape'
+    | '/'
+    | '/contact'
+    | '/explore'
+    | '/faqs'
+    | '/guides'
+    | '/the-dogs'
+    | '/the-escape'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/explore' | '/faqs' | '/the-dogs' | '/the-escape'
+  to:
+    | '/'
+    | '/contact'
+    | '/explore'
+    | '/faqs'
+    | '/guides'
+    | '/the-dogs'
+    | '/the-escape'
   id:
     | '__root__'
     | '/'
     | '/contact'
     | '/explore'
     | '/faqs'
+    | '/guides'
     | '/the-dogs'
     | '/the-escape'
   fileRoutesById: FileRoutesById
@@ -93,6 +116,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   ExploreRoute: typeof ExploreRoute
   FaqsRoute: typeof FaqsRoute
+  GuidesRoute: typeof GuidesRoute
   TheDogsRoute: typeof TheDogsRoute
   TheEscapeRoute: typeof TheEscapeRoute
 }
@@ -127,6 +151,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaqsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/guides': {
+      id: '/guides'
+      path: '/guides'
+      fullPath: '/guides'
+      preLoaderRoute: typeof GuidesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/the-dogs': {
       id: '/the-dogs'
       path: '/the-dogs'
@@ -149,6 +180,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   ExploreRoute: ExploreRoute,
   FaqsRoute: FaqsRoute,
+  GuidesRoute: GuidesRoute,
   TheDogsRoute: TheDogsRoute,
   TheEscapeRoute: TheEscapeRoute,
 }
