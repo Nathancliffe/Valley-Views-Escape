@@ -81,7 +81,7 @@ function Home() {
       <section className="relative flex min-h-[92svh] items-end overflow-hidden">
         <img
           src={heroFull.url}
-          srcSet={`${heroMobile.url} 640w, ${heroTablet.url} 1024w, ${heroFull.url} 1920w`}
+          srcSet={`${heroMobile.url} 640w, ${heroTablet.url} 1024w, ${heroFull.url} 1584w`}
           sizes="100vw"
           alt="Winnie, Woody and Rory sitting together in a grassy field with rolling Ribble Valley countryside behind"
           fetchPriority="high"
