@@ -70,15 +70,18 @@ function Guides() {
           ))}
         </div>
 
-        <Reveal className="border-border mt-16 rounded-sm border p-8 text-center sm:p-10">
-          <h2 className="font-serif text-2xl">Planning your days out?</h2>
-          <p className="text-muted-foreground mx-auto mt-3 max-w-xl">
+        <Reveal className="bg-secondary/60 border-border mt-16 overflow-hidden rounded-full border px-8 py-12 text-center sm:px-12 sm:py-14">
+          <p className="eyebrow">Keep exploring</p>
+          <h2 className="mx-auto mt-4 max-w-2xl font-serif text-3xl leading-tight sm:text-4xl">
+            Planning your days out?
+          </h2>
+          <p className="text-muted-foreground mx-auto mt-4 max-w-xl leading-relaxed">
             There's plenty more to see in the Ribble Valley — take a look at the area
             around Todber Valley.
           </p>
           <Link
             to="/explore"
-            className="link-underline text-primary mt-6 inline-flex items-center gap-2 text-[0.78rem] tracking-[0.2em] uppercase"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 mt-8 inline-flex items-center gap-2 rounded-full px-6 py-3 text-[0.78rem] tracking-[0.2em] uppercase transition-colors"
           >
             Explore the area
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
