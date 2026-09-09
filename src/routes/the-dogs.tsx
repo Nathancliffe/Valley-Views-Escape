@@ -39,6 +39,11 @@ function TheDogs() {
         eyebrow="The family"
         title="Meet Winnie, Woody & Rory"
         intro="Valley Views Escape wouldn't be the same without these three. Here's a little introduction to the real stars of the show."
+        image={{
+          src: headerFull.url,
+          srcSet: `${headerMobile.url} 640w, ${headerTablet.url} 1024w, ${headerFull.url} 1584w`,
+          alt: "Winnie, Woody and Rory sitting together in a grassy field with views over the Ribble Valley hills",
+        }}
       />
 
       {/* ---------------- DOG PROFILES ---------------- */}
