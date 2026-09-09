@@ -251,10 +251,8 @@ function Home() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
           <Reveal variant="image">
             <img
-              src={dales}
-              alt="Drystone walls and a stone barn in the countryside near Todber Valley"
-              width={1024}
-              height={1280}
+              src={site4.url}
+              alt="Winnie, Woody and Rory in the dog field at Todber Valley with Pendle Hill beyond"
               loading="lazy"
               className="aspect-[4/3] w-full rounded-sm object-cover lg:aspect-[4/5]"
             />
@@ -270,8 +268,8 @@ function Home() {
               attractions and days out.
             </p>
             <p className="text-muted-foreground mt-4 leading-relaxed">
-              It's ideal for guests who want somewhere comfortable to return to after a day
-              exploring.
+              On the park itself there's a shop, a bar and restaurant, a games room, a play park, a
+              football field, a dog field and a launderette — so there's plenty close to hand.
             </p>
             <Link
               to="/explore"
