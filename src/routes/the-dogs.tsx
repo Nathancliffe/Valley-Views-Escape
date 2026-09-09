@@ -7,6 +7,9 @@ import winnie from "@/assets/winnie.jpg.asset.json";
 import woody from "@/assets/woody.jpg.asset.json";
 import rory from "@/assets/rory.jpg.asset.json";
 import decking from "@/assets/decking-dogs.jpg.asset.json";
+import headerFull from "@/assets/valley-views-header.jpeg.asset.json";
+import headerTablet from "@/assets/valley-views-header-1024.jpg.asset.json";
+import headerMobile from "@/assets/valley-views-header-640.jpg.asset.json";
 
 const title = "Meet Winnie, Woody & Rory | Valley Views Escape";
 const description =
@@ -36,6 +39,11 @@ function TheDogs() {
         eyebrow="The family"
         title="Meet Winnie, Woody & Rory"
         intro="Valley Views Escape wouldn't be the same without these three. Here's a little introduction to the real stars of the show."
+        image={{
+          src: headerFull.url,
+          srcSet: `${headerMobile.url} 640w, ${headerTablet.url} 1024w, ${headerFull.url} 1584w`,
+          alt: "Winnie, Woody and Rory sitting together in a grassy field with views over the Ribble Valley hills",
+        }}
       />
 
       {/* ---------------- DOG PROFILES ---------------- */}
