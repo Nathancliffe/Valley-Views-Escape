@@ -30,7 +30,7 @@ export function Footer() {
               href={facebook.href}
               target="_blank"
               rel="noreferrer"
-              className="border-border hover:border-sage hover:text-primary mt-6 inline-flex items-center gap-2 rounded-sm border px-4 py-2 text-xs tracking-[0.18em] uppercase transition-colors"
+              className="border-border hover:border-sage hover:text-primary mt-6 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs tracking-[0.18em] uppercase transition-colors"
             >
               <Facebook className="h-4 w-4" aria-hidden="true" strokeWidth={1.4} />
               Follow us on Facebook
