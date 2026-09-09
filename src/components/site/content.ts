@@ -62,6 +62,16 @@ export const destinations = [
   { name: "Yorkshire Dales", note: "Wide valleys and drystone walls" },
 ];
 
+export const parkFacilities = [
+  { name: "Shop", note: "On-site shop for everyday essentials" },
+  { name: "Bar & restaurant", note: "The Steamer Inn on the park" },
+  { name: "Games room", note: "Somewhere for the family on quieter days" },
+  { name: "Park", note: "Play area for the little ones" },
+  { name: "Football field", note: "Space for a kickabout" },
+  { name: "Dog field", note: "A dog walking field for a good run around" },
+  { name: "Launderette", note: "Handy for longer stays" },
+];
+
 export const experiences = [
   "Country pubs and cafés",
   "Scenic walks",
