@@ -7,6 +7,9 @@ import winnie from "@/assets/winnie.jpg.asset.json";
 import woody from "@/assets/woody.jpg.asset.json";
 import rory from "@/assets/rory.jpg.asset.json";
 import decking from "@/assets/decking-dogs.jpg.asset.json";
+import headerFull from "@/assets/valley-views-header.jpeg.asset.json";
+import headerTablet from "@/assets/valley-views-header-1024.jpg.asset.json";
+import headerMobile from "@/assets/valley-views-header-640.jpg.asset.json";
 
 const title = "Meet Winnie, Woody & Rory | Valley Views Escape";
 const description =
