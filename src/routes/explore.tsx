@@ -96,6 +96,45 @@ function Explore() {
         </div>
       </section>
 
+      {/* ---------------- ON THE PARK ---------------- */}
+      <section className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-28">
+        <Reveal className="max-w-2xl">
+          <p className="eyebrow">On the park</p>
+          <h2 className="mt-5 font-serif text-4xl leading-tight sm:text-5xl">
+            Everything on your doorstep at Todber Valley
+          </h2>
+          <p className="text-muted-foreground mt-6 leading-relaxed">
+            You don't have to go far for a bite to eat, a walk with the dog or an afternoon with the
+            family — the park has plenty to keep everyone happy.
+          </p>
+        </Reveal>
+        <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          {parkFacilities.map((facility, i) => (
+            <Reveal key={facility.name} delay={(i % 3) * 100}>
+              <div className="border-border flex items-start gap-4 border-t pt-5">
+                <Leaf className="text-sage mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="font-serif text-2xl">{facility.name}</h3>
+                  <p className="text-muted-foreground mt-1 text-sm">{facility.note}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {facilityImages.map((image, i) => (
+            <Reveal key={image.src} variant="image" delay={i * 100}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                loading="lazy"
+                className="aspect-[4/3] w-full rounded-sm object-cover"
+              />
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
       {/* ---------------- EXPERIENCES ---------------- */}
       <section className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-32">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-20">
