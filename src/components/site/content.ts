@@ -25,6 +25,7 @@ export const navigation = [
   { label: "The Escape", href: "/the-escape" },
   { label: "Explore", href: "/explore" },
   { label: "The Dogs", href: "/the-dogs" },
+  { label: "Guides", href: "/guides" },
   { label: "FAQs", href: "/faqs" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -70,6 +71,30 @@ export const parkFacilities = [
   { name: "Football field", note: "Space for a kickabout" },
   { name: "Dog field", note: "A dog walking field for a good run around" },
   { name: "Launderette", note: "Handy for longer stays" },
+];
+
+import guideWalksPdf from "@/assets/guide-local-walks.pdf.asset.json";
+import guidePlacesPdf from "@/assets/guide-places-to-visit.pdf.asset.json";
+
+export const guides = [
+  {
+    title: "Local Walking Guide",
+    subtitle: "Walks within 5 miles",
+    description:
+      "Easy, medium and harder walks close to Todber Valley — riverside paths, pretty villages, wildlife, heritage and big Ribble Valley views, with honest notes for dog walkers.",
+    details: ["5 local walks", "Easy to hard", "Dog-walking notes"],
+    url: guideWalksPdf.url,
+    filename: "valley-views-local-walking-guide.pdf",
+  },
+  {
+    title: "Places to Visit",
+    subtitle: "Near Gisburn",
+    description:
+      "Our favourite days out right on your doorstep — historic towns, charming villages, country pubs and peaceful walks, each with a pub pick and drive time from Gisburn.",
+    details: ["12 places to visit", "Pub picks for each", "Drive times included"],
+    url: guidePlacesPdf.url,
+    filename: "valley-views-places-to-visit-guide.pdf",
+  },
 ];
 
 export const experiences = [
