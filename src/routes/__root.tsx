@@ -86,8 +86,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "A comfortable countryside holiday caravan at Todber Valley near Gisburn in the Ribble Valley. Beautiful places. Lasting memories.",
       },
       { property: "og:site_name", content: "Valley Views Escape" },
+      { property: "og:title", content: "Valley Views Escape" },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "/og-image.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
