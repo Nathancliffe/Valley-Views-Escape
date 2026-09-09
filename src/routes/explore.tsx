@@ -2,11 +2,16 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Leaf, MapPin } from "lucide-react";
 import { PageHeader } from "@/components/site/PageHeader";
 import { Reveal } from "@/components/site/Reveal";
-import { destinations, experiences } from "@/components/site/content";
-import forest from "@/assets/gisburn-forest.jpg";
-import town from "@/assets/market-town.jpg";
-import dales from "@/assets/yorkshire-dales.jpg";
-import pub from "@/assets/country-pub.jpg";
+import { destinations, experiences, parkFacilities } from "@/components/site/content";
+import s1 from "@/assets/site-photo-1.jpg.asset.json";
+import s2 from "@/assets/site-photo-2.jpg.asset.json";
+import s3 from "@/assets/site-photo-3.jpg.asset.json";
+import s4 from "@/assets/site-photo-4.jpg.asset.json";
+import s5 from "@/assets/site-photo-5.jpg.asset.json";
+import s6 from "@/assets/site-photo-6.jpg.asset.json";
+import s7 from "@/assets/site-photo-7.jpg.asset.json";
+import s8 from "@/assets/site-photo-8.jpg.asset.json";
+import s9 from "@/assets/site-photo-9.jpg.asset.json";
 
 const title = "Explore the Ribble Valley | Valley Views Escape";
 const description =
