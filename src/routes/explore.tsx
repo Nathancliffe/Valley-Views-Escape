@@ -2,15 +2,20 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Leaf, MapPin } from "lucide-react";
 import { PageHeader } from "@/components/site/PageHeader";
 import { Reveal } from "@/components/site/Reveal";
-import { destinations, experiences } from "@/components/site/content";
-import forest from "@/assets/gisburn-forest.jpg";
-import town from "@/assets/market-town.jpg";
-import dales from "@/assets/yorkshire-dales.jpg";
-import pub from "@/assets/country-pub.jpg";
+import { destinations, experiences, parkFacilities } from "@/components/site/content";
+import s1 from "@/assets/site-photo-1.jpg.asset.json";
+import s2 from "@/assets/site-photo-2.jpg.asset.json";
+import s3 from "@/assets/site-photo-3.jpg.asset.json";
+import s4 from "@/assets/site-photo-4.jpg.asset.json";
+import s5 from "@/assets/site-photo-5.jpg.asset.json";
+import s6 from "@/assets/site-photo-6.jpg.asset.json";
+import s7 from "@/assets/site-photo-7.jpg.asset.json";
+import s8 from "@/assets/site-photo-8.jpg.asset.json";
+import s9 from "@/assets/site-photo-9.jpg.asset.json";
 
 const title = "Explore the Ribble Valley | Valley Views Escape";
 const description =
-  "Valley Views Escape is perfectly placed for exploring the Ribble Valley, Yorkshire Dales and Forest of Bowland — Gisburn, Clitheroe, Skipton, country pubs, walks and family days out.";
+  "Explore the Ribble Valley, Yorkshire Dales and Forest of Bowland from Valley Views Escape, plus Todber Valley's shop, bar and restaurant, games room, park, football field, dog field and launderette.";
 
 export const Route = createFileRoute("/explore")({
   component: Explore,
@@ -28,10 +33,17 @@ export const Route = createFileRoute("/explore")({
 });
 
 const destinationImages = [
-  { src: town, alt: "A traditional market town in the Ribble Valley" },
-  { src: forest, alt: "Woodland trails in Gisburn Forest" },
-  { src: dales, alt: "Drystone walls and rolling hills in the Yorkshire Dales" },
-  { src: pub, alt: "A cosy country pub with a roaring fire" },
+  { src: s1.url, alt: "Pendle Hill rising above the fields near Todber Valley" },
+  { src: s2.url, alt: "Rolling green hills and hedgerows in the Ribble Valley" },
+  { src: s7.url, alt: "The Todber Valley Holiday Park entrance sign with countryside behind" },
+  { src: s9.url, alt: "Outdoor seating on the terrace looking out over the valley" },
+];
+
+const facilityImages = [
+  { src: s8.url, alt: "The Steamer Inn on the park, with reception and shop" },
+  { src: s6.url, alt: "The front of The Steamer Inn bar and restaurant" },
+  { src: s3.url, alt: "The dog walking area sign on the park's dog field" },
+  { src: s5.url, alt: "Winnie, Woody and Rory running in the dog walking field" },
 ];
 
 function Explore() {
@@ -81,6 +93,45 @@ function Explore() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ---------------- ON THE PARK ---------------- */}
+      <section className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-28">
+        <Reveal className="max-w-2xl">
+          <p className="eyebrow">On the park</p>
+          <h2 className="mt-5 font-serif text-4xl leading-tight sm:text-5xl">
+            Everything on your doorstep at Todber Valley
+          </h2>
+          <p className="text-muted-foreground mt-6 leading-relaxed">
+            You don't have to go far for a bite to eat, a walk with the dog or an afternoon with the
+            family — the park has plenty to keep everyone happy.
+          </p>
+        </Reveal>
+        <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          {parkFacilities.map((facility, i) => (
+            <Reveal key={facility.name} delay={(i % 3) * 100}>
+              <div className="border-border flex items-start gap-4 border-t pt-5">
+                <Leaf className="text-sage mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="font-serif text-2xl">{facility.name}</h3>
+                  <p className="text-muted-foreground mt-1 text-sm">{facility.note}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {facilityImages.map((image, i) => (
+            <Reveal key={image.src} variant="image" delay={i * 100}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                loading="lazy"
+                className="aspect-[4/3] w-full rounded-sm object-cover"
+              />
+            </Reveal>
+          ))}
         </div>
       </section>
 
