@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook } from "lucide-react";
-import logo from "@/assets/valley-views-logo.png.asset.json";
+import logo from "@/assets/valley-views-logo.png";
 import { navigation, siteSettings } from "./content";
 
 export function Footer() {

@@ -4,8 +4,8 @@ import { PageHeader } from "@/components/site/PageHeader";
 import { Reveal } from "@/components/site/Reveal";
 import { Gallery } from "@/components/site/Gallery";
 import { headlineFeatures, practicalFeatures } from "@/components/site/content";
-import v4 from "@/assets/valley-views-4.jpg.asset.json";
-import v10 from "@/assets/valley-views-10.jpg.asset.json";
+import v4 from "@/assets/valley-views-4.jpg";
+import v10 from "@/assets/valley-views-10.jpg";
 
 const title = "The Escape | Valley Views Escape, Todber Valley";
 const description =

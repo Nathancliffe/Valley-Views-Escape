@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Reveal } from "./Reveal";
-import group from "@/assets/valley-views-header.jpeg.asset.json";
-import v1 from "@/assets/valley-views-1.jpg.asset.json";
-import v2 from "@/assets/valley-views-2.jpg.asset.json";
-import v3 from "@/assets/valley-views-3.jpg.asset.json";
-import v4 from "@/assets/valley-views-4.jpg.asset.json";
-import v5 from "@/assets/valley-views-5.jpg.asset.json";
-import v6 from "@/assets/valley-views-6.jpg.asset.json";
-import v7 from "@/assets/valley-views-7.jpg.asset.json";
-import v8 from "@/assets/valley-views-8.jpg.asset.json";
-import v9 from "@/assets/valley-views-9.jpg.asset.json";
-import v10 from "@/assets/valley-views-10.jpg.asset.json";
+import group from "@/assets/valley-views-header.jpeg";
+import v1 from "@/assets/valley-views-1.jpg";
+import v2 from "@/assets/valley-views-2.jpg";
+import v3 from "@/assets/valley-views-3.jpg";
+import v4 from "@/assets/valley-views-4.jpg";
+import v5 from "@/assets/valley-views-5.jpg";
+import v6 from "@/assets/valley-views-6.jpg";
+import v7 from "@/assets/valley-views-7.jpg";
+import v8 from "@/assets/valley-views-8.jpg";
+import v9 from "@/assets/valley-views-9.jpg";
+import v10 from "@/assets/valley-views-10.jpg";
 
 const images = [
   {

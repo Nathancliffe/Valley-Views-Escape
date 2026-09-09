@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/valley-views-logo.png.asset.json";
+import logo from "@/assets/valley-views-logo.png";
 import { navigation, siteSettings } from "./content";
 import { cn } from "@/lib/utils";
 

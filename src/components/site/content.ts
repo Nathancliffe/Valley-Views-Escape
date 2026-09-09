@@ -73,8 +73,8 @@ export const parkFacilities = [
   { name: "Launderette", note: "Handy for longer stays" },
 ];
 
-import guideWalksPdf from "@/assets/guide-local-walks.pdf.asset.json";
-import guidePlacesPdf from "@/assets/guide-places-to-visit.pdf.asset.json";
+import guideWalksPdf from "@/assets/guide-local-walks.pdf";
+import guidePlacesPdf from "@/assets/guide-places-to-visit.pdf";
 
 export const guides = [
   {

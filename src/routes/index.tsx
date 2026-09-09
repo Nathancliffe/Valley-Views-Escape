@@ -4,14 +4,14 @@ import { ArrowRight, Leaf } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { useParallax } from "@/components/site/Parallax";
 import { siteSettings } from "@/components/site/content";
-import heroFull from "@/assets/valley-views-header.jpeg.asset.json";
-import heroTablet from "@/assets/valley-views-header-1024.jpg.asset.json";
-import heroMobile from "@/assets/valley-views-header-640.jpg.asset.json";
+import heroFull from "@/assets/valley-views-header.jpeg";
+import heroTablet from "@/assets/valley-views-header-1024.jpg";
+import heroMobile from "@/assets/valley-views-header-640.jpg";
 import landscape from "@/assets/valley-landscape.jpg";
 import coffee from "@/assets/morning-coffee.jpg";
 import dales from "@/assets/yorkshire-dales.jpg";
-import interior from "@/assets/valley-views-5.jpg.asset.json";
-import site4 from "@/assets/site-photo-4.jpg.asset.json";
+import interior from "@/assets/valley-views-5.jpg";
+import site4 from "@/assets/site-photo-4.jpg";
 
 const title = "Valley Views Escape | Holiday Caravan at Todber Valley, Gisburn";
 const description =

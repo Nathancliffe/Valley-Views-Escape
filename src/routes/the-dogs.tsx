@@ -3,13 +3,13 @@ import { ArrowRight, Leaf } from "lucide-react";
 import { PageHeader } from "@/components/site/PageHeader";
 import { Reveal } from "@/components/site/Reveal";
 import { dogs } from "@/components/site/content";
-import winnie from "@/assets/winnie.jpg.asset.json";
-import woody from "@/assets/woody.jpg.asset.json";
-import rory from "@/assets/rory.jpg.asset.json";
+import winnie from "@/assets/winnie.jpg";
+import woody from "@/assets/woody.jpg";
+import rory from "@/assets/rory.jpg";
 
-import headerFull from "@/assets/valley-views-header.jpeg.asset.json";
-import headerTablet from "@/assets/valley-views-header-1024.jpg.asset.json";
-import headerMobile from "@/assets/valley-views-header-640.jpg.asset.json";
+import headerFull from "@/assets/valley-views-header.jpeg";
+import headerTablet from "@/assets/valley-views-header-1024.jpg";
+import headerMobile from "@/assets/valley-views-header-640.jpg";
 
 const title = "Meet Winnie, Woody & Rory | Valley Views Escape";
 const description =
