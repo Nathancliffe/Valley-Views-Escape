@@ -15,19 +15,19 @@ import v10 from "@/assets/valley-views-10.jpg";
 
 const images = [
   {
-    src: group.url,
+    src: group,
     alt: "Winnie, Woody and Rory sitting together in a grassy field with rolling countryside behind",
   },
-  { src: v5.url, alt: "Corner sofa in the living area with countryside views through the windows" },
-  { src: v8.url, alt: "View from the living area out over the decking and open fields" },
-  { src: v4.url, alt: "Living and dining area with fireplace and mustard velvet dining chairs" },
-  { src: v1.url, alt: "Glass dining table with four mustard velvet chairs beside the window" },
-  { src: v2.url, alt: "Sage green kitchen with oven, hob, sink and fridge freezer" },
-  { src: v6.url, alt: "Kitchen worktop with kettle, toaster and air fryer" },
-  { src: v10.url, alt: "Main bedroom with double bed and bedside lamps" },
-  { src: v7.url, alt: "Second bedroom with two single beds and countryside outlook" },
-  { src: v3.url, alt: "Bathroom with walk-in shower, basin and toilet" },
-  { src: v9.url, alt: "Private decking running alongside the caravan with fields beyond" },
+  { src: v5, alt: "Corner sofa in the living area with countryside views through the windows" },
+  { src: v8, alt: "View from the living area out over the decking and open fields" },
+  { src: v4, alt: "Living and dining area with fireplace and mustard velvet dining chairs" },
+  { src: v1, alt: "Glass dining table with four mustard velvet chairs beside the window" },
+  { src: v2, alt: "Sage green kitchen with oven, hob, sink and fridge freezer" },
+  { src: v6, alt: "Kitchen worktop with kettle, toaster and air fryer" },
+  { src: v10, alt: "Main bedroom with double bed and bedside lamps" },
+  { src: v7, alt: "Second bedroom with two single beds and countryside outlook" },
+  { src: v3, alt: "Bathroom with walk-in shower, basin and toilet" },
+  { src: v9, alt: "Private decking running alongside the caravan with fields beyond" },
 ];
 
 export function Gallery() {

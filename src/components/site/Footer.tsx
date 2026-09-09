@@ -11,7 +11,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-[86rem] gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.2fr_1fr_1fr] lg:py-20">
         <div>
           <img
-            src={logo.url}
+            src={logo}
             alt="Valley Views Escape logo"
             width={72}
             height={72}
