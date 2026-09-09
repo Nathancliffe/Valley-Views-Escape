@@ -119,13 +119,13 @@ function Home() {
           >
             <Link
               to="/contact"
-              className="bg-primary text-primary-foreground hover:bg-sage-deep/90 inline-flex h-13 items-center justify-center rounded-sm px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-transform duration-300 hover:-translate-y-0.5"
+              className="bg-primary text-primary-foreground hover:bg-sage-deep/90 inline-flex h-13 items-center justify-center rounded-full px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-transform duration-300 hover:-translate-y-0.5"
             >
               Check availability
             </Link>
             <Link
               to="/the-escape"
-              className="border-cream/60 text-cream hover:bg-cream/10 inline-flex h-13 items-center justify-center rounded-sm border px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-colors duration-300"
+              className="border-cream/60 text-cream hover:bg-cream/10 inline-flex h-13 items-center justify-center rounded-full border px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-colors duration-300"
             >
               Explore the escape
             </Link>
@@ -297,13 +297,13 @@ function Home() {
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
                 to="/contact"
-                className="bg-cream text-ink inline-flex h-13 items-center justify-center rounded-sm px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-transform duration-300 hover:-translate-y-0.5"
+                className="bg-cream text-ink inline-flex h-13 items-center justify-center rounded-full px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-transform duration-300 hover:-translate-y-0.5"
               >
                 Check availability
               </Link>
               <a
                 href={`mailto:${siteSettings.email}`}
-                className="border-cream/50 text-cream hover:bg-cream/10 inline-flex h-13 items-center justify-center rounded-sm border px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-colors duration-300"
+                className="border-cream/50 text-cream hover:bg-cream/10 inline-flex h-13 items-center justify-center rounded-full border px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-colors duration-300"
               >
                 Get in touch
               </a>

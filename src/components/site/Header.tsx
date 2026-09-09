@@ -83,7 +83,7 @@ export function Header() {
           ))}
           <Link
             to="/contact"
-            className="bg-primary text-primary-foreground hover:bg-sage-deep/90 inline-flex h-10 items-center rounded-sm px-5 text-[0.72rem] tracking-[0.2em] uppercase transition-all duration-300 hover:-translate-y-px"
+            className="bg-primary text-primary-foreground hover:bg-sage-deep/90 inline-flex h-10 items-center rounded-full px-5 text-[0.72rem] tracking-[0.2em] uppercase transition-all duration-300 hover:-translate-y-px"
           >
             Check availability
           </Link>
@@ -96,7 +96,7 @@ export function Header() {
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
           className={cn(
-            "inline-flex h-11 w-11 items-center justify-center rounded-sm border lg:hidden",
+            "inline-flex h-11 w-11 items-center justify-center rounded-full border lg:hidden",
             solid ? "border-border text-foreground" : "border-cream/50 text-cream",
           )}
         >
@@ -123,7 +123,7 @@ export function Header() {
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="bg-primary text-primary-foreground mt-6 inline-flex h-14 items-center justify-center rounded-sm text-sm tracking-[0.2em] uppercase"
+            className="bg-primary text-primary-foreground mt-6 inline-flex h-14 items-center justify-center rounded-full text-sm tracking-[0.2em] uppercase"
           >
             Check availability
           </Link>

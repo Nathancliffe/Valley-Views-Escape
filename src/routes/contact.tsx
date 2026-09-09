@@ -142,7 +142,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                className="bg-primary text-primary-foreground hover:bg-sage-deep/90 mt-8 inline-flex h-13 w-full items-center justify-center rounded-sm px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-transform duration-300 hover:-translate-y-0.5 sm:w-auto"
+                className="bg-primary text-primary-foreground hover:bg-sage-deep/90 mt-8 inline-flex h-13 w-full items-center justify-center rounded-full px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-transform duration-300 hover:-translate-y-0.5 sm:w-auto"
               >
                 Send enquiry
               </button>
