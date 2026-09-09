@@ -4,14 +4,14 @@ import { ArrowRight, Leaf } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { useParallax } from "@/components/site/Parallax";
 import { siteSettings } from "@/components/site/content";
-import heroFull from "@/assets/valley-views-header.jpeg.asset.json";
-import heroTablet from "@/assets/valley-views-header-1024.jpg.asset.json";
-import heroMobile from "@/assets/valley-views-header-640.jpg.asset.json";
+import heroFull from "@/assets/valley-views-header.jpeg";
+import heroTablet from "@/assets/valley-views-header-1024.jpg";
+import heroMobile from "@/assets/valley-views-header-640.jpg";
 import landscape from "@/assets/valley-landscape.jpg";
 import coffee from "@/assets/morning-coffee.jpg";
 import dales from "@/assets/yorkshire-dales.jpg";
-import interior from "@/assets/valley-views-5.jpg.asset.json";
-import site4 from "@/assets/site-photo-4.jpg.asset.json";
+import interior from "@/assets/valley-views-5.jpg";
+import site4 from "@/assets/site-photo-4.jpg";
 
 const title = "Valley Views Escape | Holiday Caravan at Todber Valley, Gisburn";
 const description =
@@ -80,8 +80,8 @@ function Home() {
       {/* ---------------- HERO ---------------- */}
       <section className="relative flex min-h-[92svh] items-end overflow-hidden">
         <img
-          src={heroFull.url}
-          srcSet={`${heroMobile.url} 640w, ${heroTablet.url} 1024w, ${heroFull.url} 1584w`}
+          src={heroFull}
+          srcSet={`${heroMobile} 640w, ${heroTablet} 1024w, ${heroFull} 1584w`}
           sizes="100vw"
           alt="Winnie, Woody and Rory sitting together in a grassy field with rolling Ribble Valley countryside behind"
           fetchPriority="high"
@@ -174,7 +174,7 @@ function Home() {
             {[
               {
                 to: "/the-escape" as const,
-                image: interior.url,
+                image: interior,
                 eyebrow: "The escape",
                 title: "Your home away from home",
                 note: "Sleeps 6, dog friendly, central heating and countryside views.",
@@ -188,7 +188,7 @@ function Home() {
               },
               {
                 to: "/the-dogs" as const,
-                image: heroTablet.url,
+                image: heroTablet,
                 eyebrow: "The family",
                 title: "Winnie, Woody & Rory",
                 note: "The three dogs behind Valley Views Escape.",
@@ -254,7 +254,7 @@ function Home() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
           <Reveal variant="image">
             <img
-              src={site4.url}
+              src={site4}
               alt="Winnie, Woody and Rory in the dog field at Todber Valley with Pendle Hill beyond"
               loading="lazy"
               className="aspect-[4/3] w-full rounded-sm object-cover lg:aspect-[4/5]"

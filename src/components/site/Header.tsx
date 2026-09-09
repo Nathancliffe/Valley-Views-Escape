@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/valley-views-logo.png.asset.json";
+import logo from "@/assets/valley-views-logo.png";
 import { navigation, siteSettings } from "./content";
 import { cn } from "@/lib/utils";
 
@@ -41,7 +41,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-[86rem] items-center justify-between gap-6 px-5 sm:px-8 lg:h-20">
         <Link to="/" className="flex items-center gap-3" aria-label="Valley Views Escape, home">
           <img
-            src={logo.url}
+            src={logo}
             alt="Valley Views Escape logo"
             width={48}
             height={48}

@@ -3,13 +3,13 @@ import { ArrowRight, Leaf } from "lucide-react";
 import { PageHeader } from "@/components/site/PageHeader";
 import { Reveal } from "@/components/site/Reveal";
 import { dogs } from "@/components/site/content";
-import winnie from "@/assets/winnie.jpg.asset.json";
-import woody from "@/assets/woody.jpg.asset.json";
-import rory from "@/assets/rory.jpg.asset.json";
+import winnie from "@/assets/winnie.jpg";
+import woody from "@/assets/woody.jpg";
+import rory from "@/assets/rory.jpg";
 
-import headerFull from "@/assets/valley-views-header.jpeg.asset.json";
-import headerTablet from "@/assets/valley-views-header-1024.jpg.asset.json";
-import headerMobile from "@/assets/valley-views-header-640.jpg.asset.json";
+import headerFull from "@/assets/valley-views-header.jpeg";
+import headerTablet from "@/assets/valley-views-header-1024.jpg";
+import headerMobile from "@/assets/valley-views-header-640.jpg";
 
 const title = "Meet Winnie, Woody & Rory | Valley Views Escape";
 const description =
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/the-dogs")({
   }),
 });
 
-const dogImages = [winnie.url, woody.url, rory.url];
+const dogImages = [winnie, woody, rory];
 
 function TheDogs() {
   return (
@@ -40,8 +40,8 @@ function TheDogs() {
         title="Meet Winnie, Woody & Rory"
         intro="Valley Views Escape wouldn't be the same without these three. Here's a little introduction to the real stars of the show."
         image={{
-          src: headerFull.url,
-          srcSet: `${headerMobile.url} 640w, ${headerTablet.url} 1024w, ${headerFull.url} 1584w`,
+          src: headerFull,
+          srcSet: `${headerMobile} 640w, ${headerTablet} 1024w, ${headerFull} 1584w`,
           alt: "Winnie, Woody and Rory sitting together in a grassy field with views over the Ribble Valley hills",
         }}
       />
@@ -83,7 +83,7 @@ function TheDogs() {
         <div className="mx-auto grid max-w-[86rem] items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:py-28">
           <Reveal variant="image">
             <img
-              src={headerFull.url}
+              src={headerFull}
               alt="Winnie, Woody and Rory sitting together in a grassy field with rolling countryside behind"
               loading="lazy"
               className="aspect-[4/3] w-full rounded-sm object-cover"

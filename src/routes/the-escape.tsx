@@ -4,8 +4,8 @@ import { PageHeader } from "@/components/site/PageHeader";
 import { Reveal } from "@/components/site/Reveal";
 import { Gallery } from "@/components/site/Gallery";
 import { headlineFeatures, practicalFeatures } from "@/components/site/content";
-import v4 from "@/assets/valley-views-4.jpg.asset.json";
-import v10 from "@/assets/valley-views-10.jpg.asset.json";
+import v4 from "@/assets/valley-views-4.jpg";
+import v10 from "@/assets/valley-views-10.jpg";
 
 const title = "The Escape | Valley Views Escape, Todber Valley";
 const description =
@@ -83,7 +83,7 @@ function TheEscape() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <Reveal variant="image">
             <img
-              src={v4.url}
+              src={v4}
               alt="Living and dining area with fireplace and mustard velvet dining chairs"
               loading="lazy"
               className="aspect-[4/3] w-full rounded-sm object-cover"
@@ -107,7 +107,7 @@ function TheEscape() {
         <div className="mt-20 grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <Reveal className="lg:order-2" variant="image">
             <img
-              src={v10.url}
+              src={v10}
               alt="Main bedroom with double bed and bedside lamps"
               loading="lazy"
               className="aspect-[4/3] w-full rounded-sm object-cover"

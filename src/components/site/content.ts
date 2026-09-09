@@ -73,8 +73,6 @@ export const parkFacilities = [
   { name: "Launderette", note: "Handy for longer stays" },
 ];
 
-import guideWalksPdf from "@/assets/guide-local-walks.pdf.asset.json";
-import guidePlacesPdf from "@/assets/guide-places-to-visit.pdf.asset.json";
 
 export const guides = [
   {
@@ -83,7 +81,7 @@ export const guides = [
     description:
       "Easy, medium and harder walks close to Todber Valley — riverside paths, pretty villages, wildlife, heritage and big Ribble Valley views, with honest notes for dog walkers.",
     details: ["5 local walks", "Easy to hard", "Dog-walking notes"],
-    url: guideWalksPdf.url,
+    url: "/guides/guide-local-walks.pdf",
     filename: "valley-views-local-walking-guide.pdf",
   },
   {
@@ -92,7 +90,7 @@ export const guides = [
     description:
       "Our favourite days out right on your doorstep — historic towns, charming villages, country pubs and peaceful walks, each with a pub pick and drive time from Gisburn.",
     details: ["12 places to visit", "Pub picks for each", "Drive times included"],
-    url: guidePlacesPdf.url,
+    url: "/guides/guide-places-to-visit.pdf",
     filename: "valley-views-places-to-visit-guide.pdf",
   },
 ];
