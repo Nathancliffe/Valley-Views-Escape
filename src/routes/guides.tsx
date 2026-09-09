@@ -72,7 +72,7 @@ function Guides() {
 
         <Reveal className="bg-primary text-primary-foreground mt-16 px-8 py-14 text-center sm:px-12 sm:py-16">
           <p className="eyebrow !text-primary-foreground/70">Keep exploring</p>
-          <h2 className="mx-auto mt-4 max-w-2xl font-serif text-3xl leading-tight sm:text-4xl">
+          <h2 className="!text-primary-foreground mx-auto mt-4 max-w-2xl font-serif text-3xl leading-tight sm:text-4xl">
             Planning your days out?
           </h2>
           <p className="mx-auto mt-4 max-w-xl leading-relaxed opacity-80">
