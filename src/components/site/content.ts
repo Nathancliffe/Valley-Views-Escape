@@ -120,20 +120,9 @@ export const dogs = [
 ];
 
 /**
- * FAQ content — PLACEHOLDER QUESTIONS ONLY.
- * Replace each answer with the real wording before the site goes live.
+ * FAQ content.
  */
 export const faqs = [
-  {
-    category: "Booking",
-    question: "How do I check availability and book?",
-    answer: "[Placeholder — booking process to be supplied.]",
-  },
-  {
-    category: "Check-in / check-out",
-    question: "What are the check-in and check-out times?",
-    answer: "[Placeholder — check-in and check-out times to be supplied.]",
-  },
   {
     category: "Accommodation",
     question: "How many guests can stay?",
@@ -155,11 +144,7 @@ export const faqs = [
   {
     category: "Dogs / pets",
     question: "Can we bring our dog?",
-    answer: "[Placeholder — pet policy to be supplied.]",
-  },
-  {
-    category: "What to bring",
-    question: "What should we bring with us?",
-    answer: "[Placeholder — details of what is and isn't provided to be supplied.]",
+    answer:
+      "Yes — well-behaved dogs are very welcome at Valley Views Escape. There's even a dedicated dog walking field on the park for a good run around.",
   },
 ];
