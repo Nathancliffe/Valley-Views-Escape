@@ -33,10 +33,17 @@ export const Route = createFileRoute("/explore")({
 });
 
 const destinationImages = [
-  { src: town, alt: "A traditional market town in the Ribble Valley" },
-  { src: forest, alt: "Woodland trails in Gisburn Forest" },
-  { src: dales, alt: "Drystone walls and rolling hills in the Yorkshire Dales" },
-  { src: pub, alt: "A cosy country pub with a roaring fire" },
+  { src: s1.url, alt: "Pendle Hill rising above the fields near Todber Valley" },
+  { src: s2.url, alt: "Rolling green hills and hedgerows in the Ribble Valley" },
+  { src: s7.url, alt: "The Todber Valley Holiday Park entrance sign with countryside behind" },
+  { src: s9.url, alt: "Outdoor seating on the terrace looking out over the valley" },
+];
+
+const facilityImages = [
+  { src: s8.url, alt: "The Steamer Inn on the park, with reception and shop" },
+  { src: s6.url, alt: "The front of The Steamer Inn bar and restaurant" },
+  { src: s3.url, alt: "The dog walking area sign on the park's dog field" },
+  { src: s5.url, alt: "Winnie, Woody and Rory running in the dog walking field" },
 ];
 
 function Explore() {
