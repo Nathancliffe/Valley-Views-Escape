@@ -9,6 +9,7 @@ import landscape from "@/assets/valley-landscape.jpg";
 import coffee from "@/assets/morning-coffee.jpg";
 import dales from "@/assets/yorkshire-dales.jpg";
 import interior from "@/assets/valley-views-5.jpg.asset.json";
+import site4 from "@/assets/site-photo-4.jpg.asset.json";
 
 const title = "Valley Views Escape | Holiday Caravan at Todber Valley, Gisburn";
 const description =
