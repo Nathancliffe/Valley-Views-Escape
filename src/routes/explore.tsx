@@ -15,7 +15,7 @@ import s9 from "@/assets/site-photo-9.jpg.asset.json";
 
 const title = "Explore the Ribble Valley | Valley Views Escape";
 const description =
-  "Valley Views Escape is perfectly placed for exploring the Ribble Valley, Yorkshire Dales and Forest of Bowland — Gisburn, Clitheroe, Skipton, country pubs, walks and family days out.";
+  "Explore the Ribble Valley, Yorkshire Dales and Forest of Bowland from Valley Views Escape, plus Todber Valley's shop, bar and restaurant, games room, park, football field, dog field and launderette.";
 
 export const Route = createFileRoute("/explore")({
   component: Explore,
