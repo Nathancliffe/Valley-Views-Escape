@@ -4,7 +4,9 @@ import { ArrowRight, Leaf } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { useParallax } from "@/components/site/Parallax";
 import { siteSettings } from "@/components/site/content";
-import hero from "@/assets/decking-dogs.jpg.asset.json";
+import heroFull from "@/assets/valley-views-header.jpeg.asset.json";
+import heroTablet from "@/assets/valley-views-header-1024.jpg.asset.json";
+import heroMobile from "@/assets/valley-views-header-640.jpg.asset.json";
 import landscape from "@/assets/valley-landscape.jpg";
 import coffee from "@/assets/morning-coffee.jpg";
 import dales from "@/assets/yorkshire-dales.jpg";
@@ -78,10 +80,10 @@ function Home() {
       {/* ---------------- HERO ---------------- */}
       <section className="relative flex min-h-[92svh] items-end overflow-hidden">
         <img
-          src={hero.url}
-          alt="Winnie, Woody and Rory on the decking at Valley Views Escape with open countryside behind"
-          width={1150}
-          height={706}
+          src={heroFull.url}
+          srcSet={`${heroMobile.url} 640w, ${heroTablet.url} 1024w, ${heroFull.url} 1920w`}
+          sizes="100vw"
+          alt="Winnie, Woody and Rory sitting together in a grassy field with rolling Ribble Valley countryside behind"
           fetchPriority="high"
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1400ms] ${loaded ? "opacity-100" : "opacity-0"}`}
         />
@@ -186,7 +188,7 @@ function Home() {
               },
               {
                 to: "/the-dogs" as const,
-                image: hero.url,
+                image: heroTablet.url,
                 eyebrow: "The family",
                 title: "Winnie, Woody & Rory",
                 note: "The three dogs behind Valley Views Escape.",

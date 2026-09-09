@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Reveal } from "./Reveal";
-import decking from "@/assets/decking-dogs.jpg.asset.json";
+import group from "@/assets/valley-views-header.jpeg.asset.json";
 import v1 from "@/assets/valley-views-1.jpg.asset.json";
 import v2 from "@/assets/valley-views-2.jpg.asset.json";
 import v3 from "@/assets/valley-views-3.jpg.asset.json";
@@ -15,8 +15,8 @@ import v10 from "@/assets/valley-views-10.jpg.asset.json";
 
 const images = [
   {
-    src: decking.url,
-    alt: "Winnie, Woody and Rory sitting on the private decking at Valley Views Escape",
+    src: group.url,
+    alt: "Winnie, Woody and Rory sitting together in a grassy field with rolling countryside behind",
   },
   { src: v5.url, alt: "Corner sofa in the living area with countryside views through the windows" },
   { src: v8.url, alt: "View from the living area out over the decking and open fields" },

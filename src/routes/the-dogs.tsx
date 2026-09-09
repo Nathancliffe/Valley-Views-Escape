@@ -6,7 +6,7 @@ import { dogs } from "@/components/site/content";
 import winnie from "@/assets/winnie.jpg.asset.json";
 import woody from "@/assets/woody.jpg.asset.json";
 import rory from "@/assets/rory.jpg.asset.json";
-import decking from "@/assets/decking-dogs.jpg.asset.json";
+
 import headerFull from "@/assets/valley-views-header.jpeg.asset.json";
 import headerTablet from "@/assets/valley-views-header-1024.jpg.asset.json";
 import headerMobile from "@/assets/valley-views-header-640.jpg.asset.json";
@@ -83,8 +83,8 @@ function TheDogs() {
         <div className="mx-auto grid max-w-[86rem] items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:py-28">
           <Reveal variant="image">
             <img
-              src={decking.url}
-              alt="Winnie, Woody and Rory sitting together on the private decking"
+              src={headerFull.url}
+              alt="Winnie, Woody and Rory sitting together in a grassy field with rolling countryside behind"
               loading="lazy"
               className="aspect-[4/3] w-full rounded-sm object-cover"
             />
