@@ -51,7 +51,7 @@ function Contact() {
       <PageHeader
         eyebrow="Contact"
         title="Check availability"
-        intro="Get in touch to check availability and prices for your preferred dates — we'd love to hear from you."
+        intro="Get in touch to check availability and prices for your preferred dates, we'd love to hear from you."
       />
 
       <section className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-28">
