@@ -81,9 +81,9 @@ function Home() {
       <section className="relative flex min-h-[92svh] items-end overflow-hidden">
         <img
           src={heroFull}
-          srcSet={`${heroMobile} 640w, ${heroTablet} 1024w, ${heroFull} 1584w`}
+          srcSet={`${heroMobile} 640w, ${heroFull} 1200w`}
           sizes="100vw"
-          alt="Winnie, Woody and Rory sitting together in a grassy field with rolling Ribble Valley countryside behind"
+          alt="Private decking alongside the sage green caravan at Valley Views Escape looking out over open countryside"
           fetchPriority="high"
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1400ms] ${loaded ? "opacity-100" : "opacity-0"}`}
         />
