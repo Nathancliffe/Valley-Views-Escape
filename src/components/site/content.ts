@@ -79,7 +79,7 @@ export const guides = [
     title: "Local Walking Guide",
     subtitle: "Walks within 5 miles",
     description:
-      "Easy, medium and harder walks close to Todber Valley — riverside paths, pretty villages, wildlife, heritage and big Ribble Valley views, with honest notes for dog walkers.",
+      "Easy, medium and harder walks close to Todber Valley, riverside paths, pretty villages, wildlife, heritage and big Ribble Valley views, with honest notes for dog walkers.",
     details: ["5 local walks", "Easy to hard", "Dog-walking notes"],
     url: "/guides/guide-local-walks.pdf",
     filename: "valley-views-local-walking-guide.pdf",
@@ -88,7 +88,7 @@ export const guides = [
     title: "Places to Visit",
     subtitle: "Near Gisburn",
     description:
-      "Our favourite days out right on your doorstep — historic towns, charming villages, country pubs and peaceful walks, each with a pub pick and drive time from Gisburn.",
+      "Our favourite days out right on your doorstep, historic towns, charming villages, country pubs and peaceful walks, each with a pub pick and drive time from Gisburn.",
     details: ["12 places to visit", "Pub picks for each", "Drive times included"],
     url: "/guides/guide-places-to-visit.pdf",
     filename: "valley-views-places-to-visit-guide.pdf",
