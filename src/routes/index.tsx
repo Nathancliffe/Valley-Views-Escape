@@ -107,14 +107,8 @@ function Home() {
           >
             Beautiful places. Lasting memories.
           </p>
-          <p
-            className={shown("text-cream/85 mt-6 max-w-2xl text-base leading-relaxed sm:text-lg")}
-            style={{ transitionDelay: "620ms" }}
-          >
-            Escape to the countryside and enjoy a relaxing stay at Valley Views Escape, our
-            comfortable holiday caravan at Todber Valley, Gisburn, surrounded by beautiful views and
-            perfectly placed for exploring the Ribble Valley, Yorkshire Dales and Forest of Bowland.
-          </p>
+
+
           <div
             className={shown("mt-10 flex flex-col gap-3 sm:flex-row sm:items-center")}
             style={{ transitionDelay: "780ms" }}
