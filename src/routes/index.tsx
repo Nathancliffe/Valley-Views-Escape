@@ -2,13 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, Leaf } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
+import { CaravanCarousel } from "@/components/site/CaravanCarousel";
 import { useParallax } from "@/components/site/Parallax";
 import { siteSettings } from "@/components/site/content";
-import heroFull from "@/assets/valley-views-header.jpeg";
+import heroFull from "@/assets/home-hero.jpg";
+import heroMobile from "@/assets/home-hero-640.jpg";
 import heroTablet from "@/assets/valley-views-header-1024.jpg";
-import heroMobile from "@/assets/valley-views-header-640.jpg";
 import landscape from "@/assets/valley-landscape.jpg";
-import coffee from "@/assets/morning-coffee.jpg";
 import dales from "@/assets/yorkshire-dales.jpg";
 import interior from "@/assets/valley-views-5.jpg";
 import site4 from "@/assets/site-photo-4.jpg";
@@ -81,13 +81,14 @@ function Home() {
       <section className="relative flex min-h-[92svh] items-end overflow-hidden">
         <img
           src={heroFull}
-          srcSet={`${heroMobile} 640w, ${heroTablet} 1024w, ${heroFull} 1584w`}
+          srcSet={`${heroMobile} 640w, ${heroFull} 1200w`}
           sizes="100vw"
-          alt="Winnie, Woody and Rory sitting together in a grassy field with rolling Ribble Valley countryside behind"
+          alt="Private decking alongside the sage green caravan at Valley Views Escape looking out over open countryside"
           fetchPriority="high"
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1400ms] ${loaded ? "opacity-100" : "opacity-0"}`}
         />
-        <div className="from-ink/70 via-ink/25 absolute inset-0 bg-gradient-to-t to-transparent" />
+        <div className="from-ink/75 via-ink/30 absolute inset-0 bg-gradient-to-t to-transparent" />
+        <div className="from-ink/55 absolute inset-x-0 top-0 h-40 bg-gradient-to-b to-transparent" />
 
         <div className="relative mx-auto w-full max-w-[86rem] px-5 pt-32 pb-16 sm:px-8 lg:pb-24">
           <p className={shown("eyebrow !text-cream/85")} style={{ transitionDelay: "200ms" }}>
@@ -107,14 +108,8 @@ function Home() {
           >
             Beautiful places. Lasting memories.
           </p>
-          <p
-            className={shown("text-cream/85 mt-6 max-w-2xl text-base leading-relaxed sm:text-lg")}
-            style={{ transitionDelay: "620ms" }}
-          >
-            Escape to the countryside and enjoy a relaxing stay at Valley Views Escape, our
-            comfortable holiday caravan at Todber Valley, Gisburn, surrounded by beautiful views and
-            perfectly placed for exploring the Ribble Valley, Yorkshire Dales and Forest of Bowland.
-          </p>
+
+
           <div
             className={shown("mt-10 flex flex-col gap-3 sm:flex-row sm:items-center")}
             style={{ transitionDelay: "780ms" }}
@@ -136,8 +131,8 @@ function Home() {
       </section>
 
       {/* ---------------- INTRO ---------------- */}
-      <section className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-32">
-        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-20">
+      <section className="mx-auto max-w-[86rem] px-5 pt-20 pb-14 sm:px-8 lg:pt-32 lg:pb-20">
+        <div className="grid items-end gap-8 lg:grid-cols-[1fr_1fr] lg:gap-20">
           <Reveal>
             <p className="eyebrow">A slower pace</p>
             <h2 className="mt-5 font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl">
@@ -145,27 +140,43 @@ function Home() {
               <br />
               made easy.
             </h2>
-            <p className="text-muted-foreground mt-7 max-w-xl text-lg leading-relaxed">
+            <div className="rule-leaf mt-8 max-w-xs">
+              <Leaf className="text-sage h-4 w-4" aria-hidden="true" />
+            </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <p className="text-muted-foreground max-w-xl text-lg leading-relaxed">
               Whether you're planning a peaceful break, a family getaway or a few days exploring the
               countryside, Valley Views Escape has everything you need to settle in and enjoy your
               stay.
             </p>
-            <div className="rule-leaf mt-10 max-w-xs">
-              <Leaf className="text-sage h-4 w-4" aria-hidden="true" />
-            </div>
-          </Reveal>
-          <Reveal variant="image" delay={150}>
-            <img
-              src={coffee}
-              alt="A mug of coffee on the decking rail looking out over open countryside"
-              width={1280}
-              height={960}
-              loading="lazy"
-              className="aspect-[5/4] w-full rounded-sm object-cover"
-            />
           </Reveal>
         </div>
       </section>
+
+      {/* ---------------- CARAVAN CAROUSEL ---------------- */}
+      <section className="pb-20 lg:pb-28">
+        <div className="mx-auto max-w-[86rem] px-5 sm:px-8">
+          <Reveal variant="image">
+            <CaravanCarousel />
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="mt-8 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+              <p className="text-muted-foreground text-sm">
+                Inside Valley Views Escape — living space, kitchen, bedrooms and the private decking.
+              </p>
+              <Link
+                to="/the-escape"
+                className="link-underline text-primary inline-flex items-center gap-2 text-[0.78rem] tracking-[0.2em] uppercase"
+              >
+                See the caravan
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
 
       {/* ---------------- SECTION LINKS ---------------- */}
       <section className="bg-secondary/45 border-border border-y">
