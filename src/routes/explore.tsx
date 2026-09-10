@@ -145,7 +145,7 @@ function Explore() {
                 Take our local guides with you
               </h2>
               <p className="text-muted-foreground mt-4 leading-relaxed">
-                Download our walking guide and places-to-visit guide — walks within 5 miles
+                Download our walking guide and places-to-visit guide, walks within 5 miles
                 of Todber Valley and our favourite days out near Gisburn.
               </p>
             </div>
