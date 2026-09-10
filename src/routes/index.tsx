@@ -283,7 +283,7 @@ function Home() {
             </p>
             <p className="text-muted-foreground mt-4 leading-relaxed">
               On the park itself there's a shop, a bar and restaurant, a games room, a play park, a
-              football field, a dog field and a launderette — so there's plenty close to hand.
+              football field, a dog field and a launderette, so there's plenty close to hand.
             </p>
             <Link
               to="/explore"
