@@ -29,7 +29,7 @@ function Guides() {
       <PageHeader
         eyebrow="Guest guides"
         title="Guides to download"
-        intro="We've put together a few little guides to help you make the most of your stay — local walks from the doorstep and our favourite places to visit nearby. Download them before you arrive or browse them over a brew."
+        intro="We've put together a few little guides to help you make the most of your stay, local walks from the doorstep and our favourite places to visit nearby. Download them before you arrive or browse them over a brew."
       />
 
       <section className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-28">
@@ -76,7 +76,7 @@ function Guides() {
             Planning your days out?
           </h2>
           <p className="mx-auto mt-4 max-w-xl leading-relaxed opacity-80">
-            There's plenty more to see in the Ribble Valley — take a look at the area
+            There's plenty more to see in the Ribble Valley, take a look at the area
             around Todber Valley.
           </p>
           <Link
