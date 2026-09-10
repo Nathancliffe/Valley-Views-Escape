@@ -54,6 +54,71 @@ function Contact() {
         intro="Get in touch to check availability and prices for your preferred dates, we'd love to hear from you."
       />
 
+      {/* ---------------- PRICING & AVAILABILITY ---------------- */}
+      <section className="border-border bg-secondary/30 border-b">
+        <div className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-28">
+          <Reveal className="max-w-3xl">
+            <p className="eyebrow">Prices & Availability</p>
+            <h2 className="mt-5 font-serif text-3xl leading-[1.1] sm:text-4xl">
+              Flexible stays throughout the year
+            </h2>
+            <p className="text-muted-foreground mt-6 text-lg leading-relaxed">
+              We offer flexible stays throughout the year, with prices from £75 per night and a
+              minimum stay of 3 nights.
+            </p>
+          </Reveal>
+
+          <Reveal delay={120} className="mt-12">
+            <p className="font-serif text-2xl text-ink">Our most popular options</p>
+            <div className="mt-6 grid gap-5 sm:grid-cols-3">
+              <div className="bg-card border-border rounded-sm border p-7">
+                <p className="eyebrow">Long weekend</p>
+                <p className="mt-3 font-serif text-xl text-ink">Friday to Monday</p>
+                <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+                  Perfect for a long weekend away.
+                </p>
+              </div>
+              <div className="bg-card border-border rounded-sm border p-7">
+                <p className="eyebrow">Midweek escape</p>
+                <p className="mt-3 font-serif text-xl text-ink">Monday to Friday</p>
+                <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+                  Ideal for a midweek escape.
+                </p>
+              </div>
+              <div className="bg-card border-border rounded-sm border p-7">
+                <p className="eyebrow">Full week</p>
+                <p className="mt-3 font-serif text-xl text-ink">Seven nights</p>
+                <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+                  Available at a discounted rate.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={200} className="mt-10 max-w-3xl">
+            <p className="text-muted-foreground leading-relaxed">
+              Prices vary depending on the time of year, including peak dates, school holidays and
+              special occasions. For current availability and the best price for your chosen dates,
+              please get in touch with us directly.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href={`mailto:${siteSettings.email}?subject=${encodeURIComponent("Availability and pricing enquiry")}`}
+                className="bg-primary text-primary-foreground hover:bg-sage-deep/90 inline-flex items-center justify-center rounded-full px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-transform duration-300 hover:-translate-y-0.5"
+              >
+                Email us
+              </a>
+              <a
+                href={`tel:${siteSettings.phone.replace(/\s/g, "")}`}
+                className="border-border text-foreground hover:bg-secondary inline-flex items-center justify-center rounded-full border px-8 py-4 text-[0.75rem] tracking-[0.22em] uppercase transition-colors duration-300"
+              >
+                Call {siteSettings.phone}
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-28">
         <div className="grid gap-14 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
           {/* ---------------- DETAILS ---------------- */}
