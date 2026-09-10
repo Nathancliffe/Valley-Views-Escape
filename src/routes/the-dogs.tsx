@@ -76,6 +76,49 @@ function TheDogs() {
             little adventures featuring them during your stay.
           </p>
         </Reveal>
+
+        {/* ---------------- STORYBOOK DOWNLOAD ---------------- */}
+        <Reveal
+          delay={120}
+          className="border-border mx-auto mt-16 flex max-w-3xl flex-col rounded-sm border p-8 sm:p-10"
+        >
+          <div className="text-primary flex items-center gap-3">
+            <FileText className="h-5 w-5" aria-hidden="true" />
+            <span className="eyebrow !text-[0.65rem]">A little story about the three</span>
+          </div>
+          <h2 className="mt-4 font-serif text-3xl leading-tight sm:text-4xl">
+            Three Mischievous Tales
+          </h2>
+          <p className="text-muted-foreground mt-4 leading-relaxed">
+            A little book all about Winnie, Woody and Rory — three mischievous tales from
+            their adventures around Todber Valley. Perfect bedtime reading for younger
+            guests, or a lovely keepsake from your stay.
+          </p>
+          <ul className="text-muted-foreground mt-6 space-y-2 text-sm">
+            <li className="flex items-center gap-2">
+              <span className="bg-primary h-1 w-1 rounded-full" aria-hidden="true" />
+              Three original stories
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="bg-primary h-1 w-1 rounded-full" aria-hidden="true" />
+              Featuring Winnie, Woody & Rory
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="bg-primary h-1 w-1 rounded-full" aria-hidden="true" />
+              Free to download and keep
+            </li>
+          </ul>
+          <a
+            href="/guides/three-mischievous-tales.pdf"
+            download="valley-views-three-mischievous-tales.pdf"
+            target="_blank"
+            rel="noopener"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 mt-8 inline-flex w-fit items-center gap-2 rounded-full px-6 py-3 text-[0.78rem] tracking-[0.2em] uppercase transition-colors"
+          >
+            <Download className="h-4 w-4" aria-hidden="true" />
+            Download the storybook
+          </a>
+        </Reveal>
       </section>
 
       {/* ---------------- DOG FRIENDLY ---------------- */}
