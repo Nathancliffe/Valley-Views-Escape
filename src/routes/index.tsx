@@ -136,8 +136,8 @@ function Home() {
       </section>
 
       {/* ---------------- INTRO ---------------- */}
-      <section className="mx-auto max-w-[86rem] px-5 py-20 sm:px-8 lg:py-32">
-        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-20">
+      <section className="mx-auto max-w-[86rem] px-5 pt-20 pb-14 sm:px-8 lg:pt-32 lg:pb-20">
+        <div className="grid items-end gap-8 lg:grid-cols-[1fr_1fr] lg:gap-20">
           <Reveal>
             <p className="eyebrow">A slower pace</p>
             <h2 className="mt-5 font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl">
@@ -145,27 +145,43 @@ function Home() {
               <br />
               made easy.
             </h2>
-            <p className="text-muted-foreground mt-7 max-w-xl text-lg leading-relaxed">
+            <div className="rule-leaf mt-8 max-w-xs">
+              <Leaf className="text-sage h-4 w-4" aria-hidden="true" />
+            </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <p className="text-muted-foreground max-w-xl text-lg leading-relaxed">
               Whether you're planning a peaceful break, a family getaway or a few days exploring the
               countryside, Valley Views Escape has everything you need to settle in and enjoy your
               stay.
             </p>
-            <div className="rule-leaf mt-10 max-w-xs">
-              <Leaf className="text-sage h-4 w-4" aria-hidden="true" />
-            </div>
-          </Reveal>
-          <Reveal variant="image" delay={150}>
-            <img
-              src={coffee}
-              alt="A mug of coffee on the decking rail looking out over open countryside"
-              width={1280}
-              height={960}
-              loading="lazy"
-              className="aspect-[5/4] w-full rounded-sm object-cover"
-            />
           </Reveal>
         </div>
       </section>
+
+      {/* ---------------- CARAVAN CAROUSEL ---------------- */}
+      <section className="pb-20 lg:pb-28">
+        <div className="mx-auto max-w-[86rem] px-5 sm:px-8">
+          <Reveal variant="image">
+            <CaravanCarousel />
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="mt-8 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+              <p className="text-muted-foreground text-sm">
+                Inside Valley Views Escape — living space, kitchen, bedrooms and the private decking.
+              </p>
+              <Link
+                to="/the-escape"
+                className="link-underline text-primary inline-flex items-center gap-2 text-[0.78rem] tracking-[0.2em] uppercase"
+              >
+                See the caravan
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
 
       {/* ---------------- SECTION LINKS ---------------- */}
       <section className="bg-secondary/45 border-border border-y">
