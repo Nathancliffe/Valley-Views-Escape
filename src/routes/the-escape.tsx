@@ -120,7 +120,7 @@ function TheEscape() {
             </h2>
             <p className="text-muted-foreground mt-6 leading-relaxed">
               Two bedrooms plus a sofa bed in the living area means there's space for up to six
-              guests — ideal for families or a few friends getting away together. Dogs are
+              guests ideal for families or a few friends getting away together. Dogs are
               welcome too.
             </p>
             <Link
