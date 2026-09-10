@@ -22,12 +22,12 @@ export const siteSettings = {
 
 export const navigation = [
   { label: "Home", href: "/" },
-  { label: "The Escape", href: "/the-escape" },
-  { label: "Explore", href: "/explore" },
-  { label: "The Dogs", href: "/the-dogs" },
-  { label: "Guides", href: "/guides" },
+  { label: "The Caravan", href: "/the-escape" },
+  { label: "About Us", href: "/the-dogs" },
+  { label: "On The Park", href: "/explore" },
+  { label: "Things To Do", href: "/guides" },
   { label: "FAQs", href: "/faqs" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact Us", href: "/contact" },
 ] as const;
 
 export const headlineFeatures = [
