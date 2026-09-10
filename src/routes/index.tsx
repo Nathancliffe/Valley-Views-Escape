@@ -163,7 +163,7 @@ function Home() {
           <Reveal delay={120}>
             <div className="mt-8 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
               <p className="text-muted-foreground text-sm">
-                Inside Valley Views Escape — living space, kitchen, bedrooms and the private decking.
+                Inside Valley Views Escape, living space, kitchen, bedrooms and the private decking.
               </p>
               <Link
                 to="/the-escape"
