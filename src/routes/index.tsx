@@ -87,7 +87,8 @@ function Home() {
           fetchPriority="high"
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1400ms] ${loaded ? "opacity-100" : "opacity-0"}`}
         />
-        <div className="from-ink/70 via-ink/25 absolute inset-0 bg-gradient-to-t to-transparent" />
+        <div className="from-ink/75 via-ink/30 absolute inset-0 bg-gradient-to-t to-transparent" />
+        <div className="from-ink/55 absolute inset-x-0 top-0 h-40 bg-gradient-to-b to-transparent" />
 
         <div className="relative mx-auto w-full max-w-[86rem] px-5 pt-32 pb-16 sm:px-8 lg:pb-24">
           <p className={shown("eyebrow !text-cream/85")} style={{ transitionDelay: "200ms" }}>
