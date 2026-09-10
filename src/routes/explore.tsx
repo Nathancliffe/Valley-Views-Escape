@@ -105,7 +105,7 @@ function Explore() {
           </h2>
           <p className="text-muted-foreground mt-6 leading-relaxed">
             You don't have to go far for a bite to eat, a walk with the dog or an afternoon with the
-            family — the park has plenty to keep everyone happy.
+            family, the park has plenty to keep everyone happy.
           </p>
         </Reveal>
         <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
